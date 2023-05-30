@@ -39,16 +39,6 @@ else:
 except URLError as e:
   streamlit.error()
   
-streamlit.write('The user entered ', fruit_choice)
-
-#import requests
-
-
-# take the json version of the response and normalize it 
-
-#output it the screen as a table
-
-
 #import snowflake.connector
 
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
